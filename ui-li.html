@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>Assad</li>
+      <li>Azim</li>
+      <li>Akib</li>
+      <li>Abir</li>
+    </ul>
+    <button id="hide">click for hide</button>
+    <button id="show">click for show</button>
+    <script src="js/jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("ul li:first").hide(2500);
+        });
+        $("#show").click(function () {
+          $("ul li:first").show(2500);
+        });
+      });
+    </script>
+  </body>
+</html>
