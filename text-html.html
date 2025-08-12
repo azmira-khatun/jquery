@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="m">Hi</p>
+    <button>Set text content for all p elements</button>
+    <p>This is a para</p>
+    <p>My name</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $("p").text("hello");
+      $("p").html("Hello <b>world!</b>");
+
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("p").html("hello <b>world</b>");
+        });
+      });
+    </script>
+  </body>
+</html>
